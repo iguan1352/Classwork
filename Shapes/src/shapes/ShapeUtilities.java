@@ -24,16 +24,18 @@ public class ShapeUtilities {
 	
 	public static Shape getRandomShape() 
 	{
-		Random r = new Random();
-		int x = r.nextInt(100);
+		Random rand = new Random();
+		int x = rand.nextInt(100);
 		switch(x)
 		{
 			case 0:
-				return new Rectangle(r.nextInt(100)+1,r.nextInt(100)+1);
+				return new Rectangle(rand.nextInt(100)+1,rand.nextInt(100)+1);
 			case 1:
-				return new Circle(r.nextInt(100)+1);
+				return new Circle(rand.nextInt(100)+1);
+			case 2:
+				return new Square(rand.nextInt(50));
 			default:
-				return new Rectangle(r.nextInt(100)+1,r.nextInt(100)+1);
+				return new Rectangle(rand.nextInt(100)+1,rand.nextInt(100)+1);
 		}
 	}
 }

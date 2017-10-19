@@ -3,15 +3,19 @@ package shapes;
 public class ShapeRunner {
 	public static void main(String [] args)
 	{
-		Shape rect1 = new Rectangle(5,3);
-		Shape cir1 = new Circle(3);
+		Shape rectangle1 = new Rectangle(10,3);
+		Shape circle1 = new Circle(3);
+		Shape square1 = new Square(10);
+		
+		System.out.println("First test out the hard coded shape array.\n\n");
+		Shape[] shapeArr = { circle1, rectangle1, square1 };
 			
-		if(rect1.perimeter() > cir1.perimeter())
+		if(rectangle1.perimeter() > circle1.perimeter())
 			System.out.println("Larger Perimeter: Rectangle");
 		else
 			System.out.println("Larger Perimeter: Circle");
 			
-		if(rect1.area() > cir1.area())
+		if(rectangle1.area() > circle1.area())
 			System.out.println("Larger Area: Rectangle");
 		else
 			System.out.println("Larger Area: Circle");
@@ -66,5 +70,6 @@ public class Runner {
 		System.out.println("Total Perimeter: " + ShapeUtilities.sumPerimeter(shapeArr));
 
 	}
+	\n inserts a new line after the text or before the text depending on where you put it
 
 }*/
