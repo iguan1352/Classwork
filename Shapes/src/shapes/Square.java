@@ -13,7 +13,7 @@ public class Square extends Rectangle {
 	@Override
 	public String toString() 
 	{
-		return "Square Side: " + side + "Area: " + this.area() + " Perimeter: " + this.perimeter();
+		return "Square Side: " + side + " Area: " + this.area() + " Perimeter: " + this.perimeter();
 	}
 
 }
