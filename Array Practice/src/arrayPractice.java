@@ -13,9 +13,11 @@ public class arrayPractice {
 		flavors[0] = "chocolate";
 		flavors[1] = "vanilla";
 		
-		doubledArray(flavors);
+		//doubledArray(flavors);
 		
-		System.out.println(flavors[0]);
+		//System.out.println(flavors[0]);
+		
+		printArr(doubledArray(flavors));
 	
 	}
 	
@@ -29,9 +31,22 @@ public class arrayPractice {
 	{
 		for(int x = 0;x < arr1.length;x++)
 		{
-			arr1[x] = arr1[x] + arr1[x];
+			arr1[x] = doubled(arr1[x]);
 		}
+		
+		/*for(int x : arr1)
+		{
+			arr1[x] = doubled(arr1[x]);
+		}*/
 		return arr1;
+	}
+	
+	private static void printArr(Object[] arr1)
+	{
+		for(Object x : arr1)
+		{
+			System.out.println(x);
+		}
 	}
 }
 
