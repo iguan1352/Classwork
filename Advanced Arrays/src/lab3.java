@@ -1,8 +1,11 @@
+//Created on November 6, 2017 by Ivy Guan
 
 public class lab3 {
 
-	public lab3() {
-		// TODO Auto-generated constructor stub
+	public static int[] removeDuplicates(int[] list)
+	{
+		return list; 
 	}
+
 
 }
