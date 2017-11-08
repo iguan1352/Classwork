@@ -1,3 +1,4 @@
+//Created by Ivy Guan on November 8, 2017
 
 public class copyArrays {
 
@@ -11,7 +12,8 @@ public class copyArrays {
 		}
 		
 		int[] copy = copyArray(intArray);
-		copy[copy.length-1] = -7;
+		
+		//copy[copy.length-1] = -7; makes the last digit in the new array -7 
 		
 		System.out.println("Array 1: ");
 		printArray(intArray);
