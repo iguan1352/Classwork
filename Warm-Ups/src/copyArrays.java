@@ -13,7 +13,8 @@ public class copyArrays {
 		
 		int[] copy = copyArray(intArray);
 		
-		//copy[copy.length-1] = -7; makes the last digit in the new array -7 
+		//copy[copy.length-1] = -7; makes the last digit in the new array -7
+		//copy[copy.length-1] = -7; just indicates that it is a copy not the actual array
 		
 		System.out.println("Array 1: ");
 		printArray(intArray);
