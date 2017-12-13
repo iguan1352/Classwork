@@ -6,7 +6,7 @@ import java.util.List;
 public class removeDups {
 	public static void main(String[] args)
 	{
-		List<Integer> list1 = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 1, 0, 9, 3, 2));
+		List<Integer> list1 = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 1, 1, 0, 9, 3, 2));
 		System.out.println(removeDuplicates(list1));
 	}
 	
