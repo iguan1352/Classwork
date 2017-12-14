@@ -6,11 +6,12 @@ import java.util.List;
 public class removeDups {
 	public static void main(String[] args)
 	{
-		List<Integer> list1 = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 1, 1, 0, 9, 3, 2));
-		System.out.println(removeDuplicates(list1));
+		List<Integer> list1 = new ArrayList<Integer>(Arrays.asList(1, 2, 2, 2, 2, 2, 3, 1, 1, 0, 9, 3, 2));
+		removeDuplicates(list1);
+		System.out.println(list1);
 	}
 	
-	public static List<Integer> removeDuplicates(List<Integer> nums)
+	public static void removeDuplicates(List<Integer> nums)
 	{
 		Collections.sort(nums);
 		boolean remove = false;
@@ -24,12 +25,19 @@ public class removeDups {
 					nums.remove(i);
 					numDups++;
 				}
+				for(int j = 0; j < nums.size()-1; j++)
+				{
+					if(nums.get(j) == nums.get(j+1))
+					{
+						nums.remove(j);
+						numDups++;
+					}
+				}
 				if(numDups == 0)
 				{
 					remove = true;
 				}
 			}
 		}
-		return nums;
 	}
 }
